@@ -10,6 +10,8 @@ body {
 
 .account-progress {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
     gap: 33px;
     justify-content: center;
 }
