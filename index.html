@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Markup</title>
+</head>
+<body>
+    <div class="account-progress">
+        <div class="account-progress__card card done">
+            <div class="star-wrapper">
+                <img class="star" src="assets/img/star-white.svg" alt="star icon">
+            </div>
+            <h3 class="card__title">Level 1</h3>
+            <div class="card-requirements-wrapper">
+                <h4 class="card-requirements-wrapper__title">Requirements</h4>
+                <div class="card-requirements">
+                    <div class="custom-checkbox">
+                        <input id="email" type="checkbox" checked disabled/>
+                        <label class="card-requirements__item" for="email">Confirm E-mail<span></span></label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input id="phone" type="checkbox" checked disabled/>
+                        <label class="card-requirements__item" for="phone">Confirm Phone Number<span></span></label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input id="details" type="checkbox" checked disabled/>
+                        <label class="card-requirements__item" for="details">Enter personal details<span></span></label>
+                    </div>
+                </div>
+            </div>
+            <p class="turnover">Annual turnover - up to 2.500 <span>eur</span></p>
+        </div>
+        <div class="account-progress__card card">
+            <div class="star-wrapper">
+                <img class="star" src="assets/img/star-blue.svg" alt="star icon">
+            </div>
+            <h3 class="card__title">Level 2</h3>
+            <div class="card-requirements-wrapper">
+                <h4 class="card-requirements-wrapper__title">Requirements</h4>
+                <div class="card-requirements">
+                    <div class="custom-checkbox">
+                        <input id="photo" type="checkbox" disabled/>
+                        <label class="card-requirements__item" for="photo">Upload Photo ID<span></span></label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input id="utility" type="checkbox" disabled/>
+                        <label class="card-requirements__item" for="utility">Upload Utility Bill<span></span></label>
+                    </div>
+                </div>
+            </div>
+            <p class="turnover">Annual turnover - up to 30.000 <span>eur</span></p>
+        </div>
+    </div>
+</body>
+</html>

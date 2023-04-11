@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.account-progress {
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+}
+
+.star-wrapper {
+    position: absolute;
+    top: 33px;
+    left: 24px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.star {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card.done .star-wrapper {
+    background: #2eae77;
+}
+
+.card {
+    position: relative;
+    border-radius: 12px;
+    background-color: white;
+    color: #989898;
+    -webkit-box-shadow: 0 5px 22px -3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 5px 22px -3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 5px 22px -3px rgba(34, 60, 80, 0.2);
+    max-width: 263px;
+    padding: 40px 24px 40px 16px;
+    height: auto;
+    width: 100%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.done {
+    background-color: #34d495;
+    color: white;
+}
+
+.card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 31px;
+    margin-bottom: 17px;
+    letter-spacing: 0.3px;
+    padding-left: 75px;
+}
+
+.card-requirements-wrapper {
+    margin-bottom: 19px;
+    flex: 1 1 0;
+}
+
+.card-requirements-wrapper__title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+
+.card-requirements__item {
+    font-size: 16px;
+    padding-right: 34px;
+}
+
+.custom-checkbox:first-of-type {
+    margin-bottom: 6px;
+}
+
+.custom-checkbox:last-of-type {
+    margin-bottom: 0;
+}
+
+.card.done .turnover {
+    letter-spacing: 0.58px;
+}
+
+.turnover {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    margin-bottom: -9px;
+    margin-top: 5px;
+}
+
+.turnover span {
+    text-transform: uppercase;
+}
+
+.custom-checkbox {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.custom-checkbox input {
+    visibility: hidden;
+}
+
+.custom-checkbox label {
+    position: relative;
+}
+
+.custom-checkbox label:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1.5px #989898;
+    width: 9px;
+    height: 9px;
+    bottom: 6px;
+    right: 7px;
+}
+
+.card.done .custom-checkbox span {
+    background-color: #34d495;
+}
+
+.card.done .custom-checkbox label:after {
+    box-shadow: 0 0 0 2px #fff;
+    width: 14px;
+    height: 14px;
+    bottom: 4px;
+    right: 4px;
+}
+
+.card.done .custom-checkbox input[type=checkbox]:checked + label:before {
+    border-color: #fff;
+}
+
+.custom-checkbox span {
+    width: 7px;
+    height: 8px;
+    position: absolute;
+    z-index: 98;
+    right: 1px;
+    opacity: 0;
+    background-color: white;
+    top: 0;
+}
+
+.custom-checkbox input[type=checkbox]:checked + label:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 12px;
+    border-width: 2px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: #989898;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(42deg);
+    top: -1px;
+    right: 5px;
+    z-index: 99;
+}
+
+.custom-checkbox input[type=checkbox]:checked + label span {
+    opacity: 1;
+}
+
+
